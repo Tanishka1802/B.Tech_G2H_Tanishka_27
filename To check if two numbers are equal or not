@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int x,y;
+    printf("enter number \n");
+    scanf("%d", &x);
+    printf("enter number to be checked \n");
+    scanf("%d", &y);
+    if(x==y)
+     printf("equal");
+     else
+     printf("not equal");
+
+    return 0;
+}
