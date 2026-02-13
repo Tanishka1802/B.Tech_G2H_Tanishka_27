@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,y,x,m1,m2,m,z;
+    printf("enter number of days %d \n");
+    scanf("%d",&a);
+    x=a/365;
+    y=a%365;
+    m1=y/30;
+    m2=12*x;
+    m=m1+m2;
+    z=y%30;
+    printf("years= %d \n",x);
+    printf("months= %d \n",m);
+    printf("remaining days= %d \n",z);
+    return 0;
+    
+}
