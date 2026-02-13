@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+  int x,y,z,a;
+  printf("1 for addition \n");
+  printf("2 for subtraction \n");
+  printf("3 for multiplication \n");
+  printf("4 for division \n");
+  printf("enter number1 \n");
+  scanf("%d",&x);
+  printf("enter function \n");
+  scanf("%d",&y);
+  printf("enter second number \n");
+  scanf("%d",&z);
+  if(y==1)
+    {
+    a=x+z;
+    printf("sum =%d",a);
+        
+    }
+  else if(y==2)
+    {
+    a=x-z;
+    printf("answer=%d",a);
+        
+    }
+  else if(y==3)
+    {
+    a=x*z;
+    printf("answer=%d",a);
+        
+    }
+  else
+    {
+    a=x/z;
+    printf("answer=%d",a);
+        
+    }
+  return 0;
+    
+}
