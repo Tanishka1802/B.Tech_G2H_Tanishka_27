@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    float sum=1.0;
+    printf("enter length of series");
+    scanf("%d", &n);
+    for(i=1;i<n+1;i++)
+    {
+        sum=sum+(1.0/i);
+    }
+    printf("sum of series is %f", sum );
+
+    return 0;
+}
