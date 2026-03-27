@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i,n;
+    int sum=0;
+    int avg;
+    printf("enter length of array \n");
+    scanf("%d", &n);
+    int a[n];
+    printf("enter elements of array \n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        sum = sum+a[i];
+    }
+    printf("sum of array is %d \n", sum);
+    avg = sum/n;
+    printf("average of array is %d \n", avg);
+    return 0;
+}#include <stdio.h>
+
+int main() 
+{
+    int n,i,x;
+    int found=0; 
+    int p=0;
+    printf("enter length of array \n");
+    scanf("%d", &n);
+    int a[n];
+    printf("enter elements of array\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    printf("enter element to be found \n");
+    scanf("%d", &x);
+    for(i=0;i<n;i++)
+    {
+        if(x==a[i])
+        {
+        printf("element found at %d position", i+1 );
+        found=1;
+        break;
+        }
+    }
+    if(found==0)
+    printf("element not found");
+    return 0;
+}
