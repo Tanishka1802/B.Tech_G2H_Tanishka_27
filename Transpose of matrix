@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int x,y,i,j;
+    printf("enter dimensions of matrix  \n");
+    scanf("%d %d",&x,&y );
+    int a[x][y];
+    int b[x][y];
+    printf("enter elements of matrix1\n");
+    for(i=0; i<x; i++)
+    {
+        for (j=0; j<y; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
+        
+    }
+    printf("input matrix : \n");
+    for(i=0; i<x; i++)
+    {
+        for (j=0; j<y; j++)
+        {
+            printf("%d",a[i][j]);
+            printf(" ");
+        }
+        printf("\n");
+    }
+    printf("transpose of matrix : \n");
+    for(i=0; i<y; i++)
+    {
+        for (j=0; j<x; j++)
+        {
+            printf("%d",a[j][i]);
+            printf(" ");
+        }
+        printf("\n");
+    }
+return 0;
+}
